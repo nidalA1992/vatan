@@ -50,7 +50,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </ul>
         </nav>
         <div class="lang-switcher">
-          <button class="lang-switcher__button">RU</button>
+          <button
+            class="lang-switcher__button"
+            onclick="((e) => {
+						document.querySelector('.lang-switcher__menu').classList.toggle('is-Open')
+					})()">
+            RU
+          </button>
           <div class="lang-switcher__menu">
             <a href="/ru">RU</a>
             <a href="/">UZ</a>
@@ -611,7 +617,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="out-offset"></div>
 
       <section class="benefits container">
-        <p class="fs40 white semiBold center ls05">
+        <p class="benefits__text fs40 white semiBold center ls05">
           Все для жизни - все для счастья
         </p>
         <div class="out-offset"></div>

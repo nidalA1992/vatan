@@ -50,7 +50,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </ul>
         </nav>
         <div class="lang-switcher">
-          <button class="lang-switcher__button">UZ</button>
+          <button
+            onclick="((e) => {
+						document.querySelector('.lang-switcher__menu').classList.toggle('is-Open')
+					})()"
+            class="lang-switcher__button">
+            UZ
+          </button>
           <div class="lang-switcher__menu">
             <a href="/ru">RU</a>
             <a href="/">UZ</a>
@@ -611,7 +617,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="out-offset"></div>
 
       <section class="benefits container">
-        <p class="fs40 white semiBold center ls05">
+        <p class="benefits__text fs40 white semiBold center ls05">
           Barchasi hayot uchun va barchasi baxt uchun
         </p>
         <div class="out-offset"></div>
@@ -656,7 +662,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <p class="presentation__descr white light fs25 center">
               VATAN turar-joy majmuasining batafsil taqdimotini yuklab oling
             </p>
-            <a href="/" class="button button-line button-line--white">
+            <a href="/" download class="button button-line button-line--white">
               Yuklab olish
             </a>
           </div>
